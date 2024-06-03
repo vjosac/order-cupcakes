@@ -86,13 +86,13 @@ fun OrderSummaryScreen(
                 verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.padding_small))
             ) {
                 Button(
-                    onClick = {},
+                    onClick = { onSendButtonClicked(newOrder, orderSummary) },
                     modifier = Modifier.fillMaxWidth()
                 ) {
                     Text(text = stringResource(R.string.send))
                 }
                 OutlinedButton(
-                    onClick = { /*TODO*/ },
+                    onClick = onCancelButtonClicked,
                     modifier = Modifier.fillMaxWidth()
                 ) {
                     Text(text = stringResource(R.string.cancel))
